@@ -1,0 +1,66 @@
+
+.home {
+    color: white;
+    background: url('../../assets/home/background-home-desktop.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.contentHome{
+    position: relative;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+.left{
+    flex: 1 1;
+    position: absolute;
+    top: 380px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+.paragraphHome{
+    font-family: 'Barlow Condensed', sans-serif;
+    max-width:50%;
+    font-size: 18px;
+    line-height: 32px;
+    
+}
+.titleHome{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+}
+.secondTitleHome{
+    font-family: 'Barlow Condensed';
+    font-size: 158px;
+    font-weight: 400;
+    letter-spacing: 7px;
+    padding:0;
+    margin:0;
+}
+.right{
+    flex: 1 1;
+    position: absolute;
+    top: 480px;
+    right: -1030px;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+button{
+    font-family: 'Barlow Condensed';
+    padding:130px 100px;
+    border-radius: 80%;
+    border: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+}

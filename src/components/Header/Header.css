@@ -1,0 +1,68 @@
+.header {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    margin: 1em 3em;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0 3em 0 0;
+}
+
+.lineLinks {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.lineLinks:before {
+    margin: 30px 0 0 10px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 40%;
+    background-color: gray;
+    z-index: 1;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header nav ul li a:hover {
+    padding: 1em 0;
+    border-bottom: 2px solid white;
+}
+
+.nbrHeader {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.linkHeader ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navbarHeader {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 60%;
+    padding: 20px 20px;
+    right: 0;
+}
+
+.navlinks {
+    gap: 60px;
+}
