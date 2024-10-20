@@ -64,3 +64,50 @@ button{
     font-size: 24px;
     letter-spacing: 3px;
 }
+
+@media (max-width:768px){
+    .contentHome{
+        overflow: scroll;
+        position: relative;
+        display:flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .left{
+        margin: 0 auto;
+        padding: 0 0 0 4em;
+        text-align: center;
+        /* top: 348px; */
+        width: 100%;
+        height: 100%;
+    }
+    .titleHome{
+        font-size: 12px;
+        text-align: center;
+    }
+    .secondTitleHome{
+        font-size: 60px;
+        text-align: center;
+    }
+    .paragraphHome{
+        font-family: 'Barlow Condensed', sans-serif;
+        max-width:100%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .right{
+        margin: 0 auto;
+        top: 740px;
+        right: -186px;
+        width: 100%;
+        height: 100%;
+    }
+    button{
+        padding: 90px 60px;
+        display:flex;
+        margin:0 auto;
+    }
+}

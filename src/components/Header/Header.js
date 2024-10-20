@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import { useState } from "react";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="logo">
@@ -18,33 +21,76 @@ const Header = () => {
       </div>
       <div className="lineLinks">
         <div className="line"></div>
-        
-          <nav className="navbarHeader">
-            <ul className="navlinks">
+
+        <nav className="navbarHeader">
+          <ul className="navlinks">
+            <li className="linkHeader">
+              <Link to="/">
+                <span className="nbrHeader">00</span> HOME
+              </Link>
+            </li>
+            <li className="linkHeader">
+              <Link to="/destination">
+                <span className="nbrHeader">01</span> DESTINATION
+              </Link>
+            </li>
+            <li className="linkHeader">
+              <Link to="/crew">
+                <span className="nbrHeader">02</span> CREW
+              </Link>
+            </li>
+            <li className="linkHeader">
+              <Link to="/technology">
+                <span className="nbrHeader">03</span> TECHNOLOGY
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      {/* Hamburger menu for mobile */}
+      <div className="hamburger">
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="hamburger-button"
+          aria-expanded={isMobileMenuOpen}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+            </g>
+          </svg>
+        </button>
+
+        {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+          <nav className="mobile-menu">
+            <ul className="navlinksMobile">
               <li className="linkHeader">
-                <Link to="/">
+                <Link to="/" className="mobile-menu-item">
                   <span className="nbrHeader">00</span> HOME
                 </Link>
               </li>
               <li className="linkHeader">
-                <Link to="/destination">
+                <Link to="/destination" className="mobile-menu-item">
                   <span className="nbrHeader">01</span> DESTINATION
                 </Link>
               </li>
               <li className="linkHeader">
-                <Link to="/crew">
+                <Link to="/crew" className="mobile-menu-item">
                   <span className="nbrHeader">02</span> CREW
                 </Link>
               </li>
               <li className="linkHeader">
-                <Link to="/technology">
+                <Link to="/technology" className="mobile-menu-item">
                   <span className="nbrHeader">03</span> TECHNOLOGY
                 </Link>
               </li>
             </ul>
           </nav>
-        
+           )}
       </div>
+   
     </header>
   );
 };

@@ -4,6 +4,11 @@
     margin: 1em 3em;
 }
 
+.hamburger {
+    display: none;
+    /* Hidden by default */
+}
+
 .header nav ul {
     display: flex;
     justify-content: center;
@@ -65,4 +70,94 @@
 
 .navlinks {
     gap: 60px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+        /* Hide desktop menu on mobile */
+    }
+
+    button {
+        border-radius: none;
+    }
+
+    .hamburger {
+        display: block;
+
+        background-color: #5c5e60;
+    }
+
+    .hamburger {
+        display: block;
+        background: none; /* Elimină fundalul gri */
+        padding: 1em 0 0 14em;
+    }
+    
+    .hamburger-button {
+        display: block;
+        background: none; /* Elimină fundalul */
+        border: none;     /* Elimină bordura */
+        padding: 0;       /* Elimină padding-ul */
+        cursor: pointer;  /* Schimbă cursorul pentru a arăta ca un buton */
+    }
+    
+    .hamburger-button svg {
+        display: block;
+        fill: #D0D6F9;    /* Asigură-te că svg-ul își păstrează culoarea */
+    }
+    
+
+    .header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .logo {
+        
+        padding: 7px;
+    }
+
+    .header {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navlinksMobile {
+        margin: 1rem 0rem 0rem 0.5rem;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .linkHeader{
+        padding:1em 0 1em 0;
+    }
+    .mobile-menu {
+        display: block;
+        margin: 60px 6px 0px -189px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .mobile-menu::before {
+        content: '';
+        position: absolute;
+        top: 81.3px;
+        right: 30px;
+        width: 0;
+        height: 0;
+
+    }
+
+    .mobile-menu-item {
+        font-size: 20px;
+        padding: 20px 0;
+        color: #5c5e60;
+        font-weight: 600;
+    }
+
+    .lineLinks {
+        display: none;
+    }
 }
