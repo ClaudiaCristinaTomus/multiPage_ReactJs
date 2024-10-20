@@ -85,14 +85,8 @@
 
     .hamburger {
         display: block;
-
-        background-color: #5c5e60;
-    }
-
-    .hamburger {
-        display: block;
         background: none; /* Elimină fundalul gri */
-        padding: 1em 0 0 14em;
+        padding: 1em 8em 0 16em;
     }
     
     .hamburger-button {
