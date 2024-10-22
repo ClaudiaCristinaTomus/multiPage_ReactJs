@@ -86,7 +86,7 @@
     .hamburger {
         display: block;
         background: none; /* Elimină fundalul gri */
-        padding: 1em 8em 0 16em;
+        padding: 1em 8em 0 15em;
     }
     
     .hamburger-button {
@@ -99,7 +99,7 @@
     
     .hamburger-button svg {
         display: block;
-        fill: #D0D6F9;    /* Asigură-te că svg-ul își păstrează culoarea */
+        fill: #D0D6F9;    
     }
     
 
@@ -130,7 +130,7 @@
     }
     .mobile-menu {
         display: block;
-        margin: 60px 6px 0px -189px;
+        margin: 60px 6px 0px -206px;
         padding: 20px 0px 0px 0px;
     }
 
